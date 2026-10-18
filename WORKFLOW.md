@@ -1,6 +1,6 @@
 # Collaborative assignment workflow
 
-Scope currently implemented: Questions 1--5. The assistant maintains Python,
+Scope currently implemented: Questions 1--6. The assistant maintains Python,
 generated numerical outputs, and LaTeX mechanics. The student writes the
 interpretations in `sections/q1.tex` and `sections/q2.tex`. Do not edit generated files in `results/`;
 rerun Python when a numerical change is needed.
@@ -16,6 +16,7 @@ python -m venv .venv
 .venv/bin/python code/q2.py
 .venv/bin/python code/q4.py
 .venv/bin/python code/q5.py
+.venv/bin/python code/q6.py
 mkdir -p build
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex
 ```
@@ -56,5 +57,7 @@ GitHub synchronization. Never place an Overleaf token in the repository/chat.
 - Q4 regressions and residual export: generated and numerically checked.
 - Q4 explanation: approved text included.
 - Q5 regression: generated and independently checked.
-- Questions 6--9: not started.
+- Q6 fit comparison: generated and checked on the common 200-observation sample.
+- Q6 comparison text: waiting for student.
+- Questions 7--9: not started.
 - Overleaf: initial import and compilation observed; latest pull pending.

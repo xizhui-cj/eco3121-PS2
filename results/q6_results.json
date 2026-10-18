@@ -1,0 +1,20 @@
+{
+  "question": 6,
+  "total_sum_of_squares": 38613.604925942214,
+  "models": [
+    {
+      "model": "Q5: education only",
+      "n": 200,
+      "r_squared": 0.9607930673397983,
+      "explained_sum_of_squares_SSE": 37099.6839178431,
+      "residual_sum_of_squares_SSR": 1513.9210080990508
+    },
+    {
+      "model": "Q1: education and ability",
+      "n": 200,
+      "r_squared": 0.9822860107108989,
+      "explained_sum_of_squares_SSE": 37929.603941870424,
+      "residual_sum_of_squares_SSR": 684.0009840717198
+    }
+  ]
+}
