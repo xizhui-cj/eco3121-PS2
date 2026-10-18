@@ -1,0 +1,9 @@
+{
+  "question": 3,
+  "source_model": "Q1: wage on education and ability with intercept",
+  "n": 200,
+  "residual_df": 197,
+  "r_squared": 0.9822860107108989,
+  "residual_sum_of_squares": 684.0009840717197,
+  "regression_standard_error": 1.86335348593927
+}

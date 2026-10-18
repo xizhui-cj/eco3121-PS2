@@ -1,4 +1,4 @@
-"""Question 1 only. Run from any directory; output paths are project-relative."""
+"""Questions 1 and 3. Run from any directory; output paths are project-relative."""
 from pathlib import Path
 import json
 import hashlib
@@ -48,5 +48,27 @@ equation = '\n'.join([
     rf' + {model.params["ability"]:.3f}\,\mathrm{{ability}}_i.',
     r'\]', ''])
 (out / 'q1_equation.tex').write_text(equation)
+# Question 3 uses this same levels regression, not the log-wage model.
+ssr = float(model.resid @ model.resid)
+sst = float(((df['wage'] - df['wage'].mean()) ** 2).sum())
+r_squared = 1 - ssr / sst
+ser = float(np.sqrt(ssr / model.df_resid))
+np.testing.assert_allclose([r_squared, ssr, ser],
+                           [model.rsquared, model.ssr, np.sqrt(model.mse_resid)],
+                           rtol=1e-10)
+q3 = {'question': 3, 'source_model': 'Q1: wage on education and ability with intercept',
+      'n': int(model.nobs), 'residual_df': int(model.df_resid),
+      'r_squared': r_squared, 'residual_sum_of_squares': ssr,
+      'regression_standard_error': ser}
+(out / 'q3_results.json').write_text(json.dumps(q3, indent=2) + '\n')
+q3_table = '\n'.join([
+    r'\begin{center}', r'\begin{tabular}{lr}', r'\hline',
+    r'Quantity & Estimate \\', r'\hline',
+    rf'$R^2$ & {r_squared:.3f} \\',
+    rf'Residual sum of squares (SSR) & {ssr:.3f} \\',
+    rf'Standard error of the regression & {ser:.3f} \\',
+    r'\hline', r'\end{tabular}', r'\end{center}', ''])
+(out / 'q3_table.tex').write_text(q3_table)
+print(json.dumps(q3, indent=2))
 print(json.dumps(metadata, indent=2))
 print('Verified CSV/Stata agreement and independent OLS calculations.')
