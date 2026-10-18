@@ -1,0 +1,9 @@
+{
+  "question": 1,
+  "n": 200,
+  "intercept": true,
+  "standard_errors": "usual OLS (nonrobust)",
+  "education_coefficient": 3.6903240356926146,
+  "education_std_error": 0.08308297169477613,
+  "input_sha256": "7227a779fffb490d3d58f3a76e00bec9b424440447018f6c676f2e7a79e5cee6"
+}
