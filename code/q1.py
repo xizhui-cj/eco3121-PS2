@@ -41,5 +41,12 @@ table = '\n'.join([
     rf'Observations & {int(model.nobs)} \\',
     r'\hline', r'\end{tabular}', r'\end{center}', ''])
 (out / 'q1_table.tex').write_text(table)
+equation = '\n'.join([
+    r'\[',
+    rf'\widehat{{\mathrm{{wage}}}}_i = {model.params["const"]:.6f}'
+    rf' + {model.params["education"]:.6f}\,\mathrm{{education}}_i'
+    rf' + {model.params["ability"]:.6f}\,\mathrm{{ability}}_i.',
+    r'\]', ''])
+(out / 'q1_equation.tex').write_text(equation)
 print(json.dumps(metadata, indent=2))
 print('Verified CSV/Stata agreement and independent OLS calculations.')
