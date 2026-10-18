@@ -1,16 +1,7 @@
 \section*{Question 9}
-Homoskedasticity requires
-\[
-\operatorname{Var}(u_i\mid\mathrm{education}_i,\mathrm{ability}_i)=\sigma^2.
-\]
-This may be implausible for wages: unobserved factors such as occupation
-and industry may produce different wage dispersion across education and
-ability levels. Heteroskedasticity is therefore plausible, though not
-established by this reasoning alone.
+Homoskedasticity may be unlikely because wage dispersion can vary across
+education and ability levels.
 
-Homoskedasticity is not required for OLS to be unbiased. With random
-sampling, no perfect multicollinearity, and zero conditional mean,
-$E[u_i\mid\mathrm{education}_i,\mathrm{ability}_i]=0$, OLS can remain
-unbiased even if the conditional error variance varies. Homoskedasticity
-is needed for the usual OLS variance formula and the Gauss--Markov
-efficiency guarantee, rather than for unbiasedness.
+It is not required for OLS to be unbiased: with zero conditional mean and
+the other standard OLS assumptions, heteroskedasticity does not cause bias.
+It can, however, invalidate the usual standard errors.
