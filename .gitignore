@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 build/
+code_output/
 *.aux
 *.log
 *.fls

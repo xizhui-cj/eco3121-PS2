@@ -2,6 +2,9 @@
 
 Collaborative coursework project. Complete draft: Questions 1--9.
 
+`PS2_code.py` is the standalone code submission for all computational questions.
+Run `python PS2_code.py`; see `CODE_README.txt` for dependencies and outputs.
+
 - `code/q1.py`, `code/q2.py`, `code/q4.py`, `code/q5.py`, `code/q6.py`, and `code/q7.py`: reproducible regressions and numerical checks (q1.py also generates Q3).
 - `results/`: generated estimates and LaTeX table.
 - `main.tex`: main LaTeX document; compile this file in Overleaf.
