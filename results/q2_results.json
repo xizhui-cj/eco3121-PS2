@@ -1,0 +1,10 @@
+{
+  "question": 2,
+  "n": 200,
+  "dependent_variable": "ln(wage)",
+  "intercept": true,
+  "standard_errors": "usual OLS (nonrobust)",
+  "education_coefficient": 0.06533254883450036,
+  "education_std_error": 0.0019789315242852287,
+  "input_sha256": "7227a779fffb490d3d58f3a76e00bec9b424440447018f6c676f2e7a79e5cee6"
+}
