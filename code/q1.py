@@ -36,16 +36,16 @@ metadata = {'question': 1, 'n': int(model.nobs), 'intercept': True,
 table = '\n'.join([
     r'\begin{center}', r'\begin{tabular}{lr}', r'\hline',
     r'Quantity & Estimate \\', r'\hline',
-    rf'Education coefficient ($\hat{{\beta}}_1$) & {model.params["education"]:.6f} \\',
-    rf'Usual OLS standard error & {model.bse["education"]:.6f} \\',
+    rf'Education coefficient ($\hat{{\beta}}_1$) & {model.params["education"]:.3f} \\',
+    rf'Usual OLS standard error & {model.bse["education"]:.3f} \\',
     rf'Observations & {int(model.nobs)} \\',
     r'\hline', r'\end{tabular}', r'\end{center}', ''])
 (out / 'q1_table.tex').write_text(table)
 equation = '\n'.join([
     r'\[',
-    rf'\widehat{{\mathrm{{wage}}}}_i = {model.params["const"]:.6f}'
-    rf' + {model.params["education"]:.6f}\,\mathrm{{education}}_i'
-    rf' + {model.params["ability"]:.6f}\,\mathrm{{ability}}_i.',
+    rf'\widehat{{\mathrm{{wage}}}}_i = {model.params["const"]:.3f}'
+    rf' + {model.params["education"]:.3f}\,\mathrm{{education}}_i'
+    rf' + {model.params["ability"]:.3f}\,\mathrm{{ability}}_i.',
     r'\]', ''])
 (out / 'q1_equation.tex').write_text(equation)
 print(json.dumps(metadata, indent=2))
