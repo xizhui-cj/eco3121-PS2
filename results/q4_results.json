@@ -1,0 +1,8 @@
+{
+  "question": 4,
+  "n": 200,
+  "intercept_in_each_regression": true,
+  "res_coefficient": 3.690324035692613,
+  "q1_education_coefficient": 3.6903240356926146,
+  "difference": -1.7763568394002505e-15
+}
