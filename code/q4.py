@@ -38,16 +38,11 @@ latex = '\n'.join([
     rf' + {first.params["ability"]:.3f}\,\mathrm{{ability}}_i,',
     r'\qquad \mathrm{res}_i=\mathrm{education}_i-\widehat{\mathrm{education}}_i.',
     r'\]',
-    r'The second regression gives',
     r'\[',
     rf'\widehat{{\mathrm{{wage}}}}_i = {second.params["const"]:.3f}'
     rf' + {second.params["res"]:.3f}\,\mathrm{{res}}_i.',
     r'\]',
-    r'\begin{center}', r'\begin{tabular}{lr}', r'\hline',
-    r'Coefficient & Estimate \\', r'\hline',
-    rf'On res in Question 4 & {second.params["res"]:.3f} \\',
-    rf'On education in Question 1 & {full.params["education"]:.3f} \\',
-    r'\hline', r'\end{tabular}', r'\end{center}', ''])
+    ''])
 (out / 'q4_output.tex').write_text(latex)
 print(json.dumps(metadata, indent=2))
 print('Verified residual orthogonality and slope equality before rounding.')

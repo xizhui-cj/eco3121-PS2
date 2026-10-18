@@ -39,13 +39,11 @@ latex = '\n'.join([
     rf' + {delta:.3f}\,\mathrm{{education}}_i,',
     rf'\qquad \tilde{{\delta}}_1={delta:.3f}.',
     r'\]',
-    r'Using unrounded estimates for the calculations,',
     r'\[',
-    rf'\tilde{{\beta}}_1-\hat{{\beta}}_1={lhs:.3f}',
-    rf'\quad\text{{and}}\quad \hat{{\beta}}_2\tilde{{\delta}}_1={rhs:.3f}.',
+    rf'\tilde{{\beta}}_1-\hat{{\beta}}_1=\hat{{\beta}}_2\tilde{{\delta}}_1'
+    rf'\approx {lhs:.3f}.',
     r'\]',
-    r'Thus $\tilde{\beta}_1-\hat{\beta}_1=\hat{\beta}_2\tilde{\delta}_1$',
-    r'holds up to numerical precision. All displayed estimates are rounded to three decimals.', ''])
+    ''])
 (out / 'q7_output.tex').write_text(latex)
 print(json.dumps(metadata, indent=2))
 print('Verified auxiliary slope independently and coefficient identity before rounding.')

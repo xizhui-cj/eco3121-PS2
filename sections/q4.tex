@@ -1,14 +1,6 @@
 \section*{Question 4}
-First, education is regressed on ability, including an intercept. The residuals
-are saved as \texttt{res}, using the unrounded fitted values.
 \input{results/q4_output}
-Both regressions include an intercept and use all 200 observations.
-The coefficient on \texttt{res} equals the education coefficient in Question 1
-before rounding, up to numerical precision.
-
-\paragraph{Explanation.}
 The coefficient on \texttt{res} is 3.690, equal to the education coefficient
-in Question 1. The residuals capture the variation in education left after
-removing its linear relationship with ability. Regressing wage on these
-residuals therefore gives the same education coefficient as controlling for
-ability directly, as stated by the Frisch--Waugh--Lovell theorem.
+in Question 1. The residuals remove education's linear relationship with
+ability, so regressing wage on them gives the same slope as controlling
+for ability directly (the Frisch--Waugh--Lovell theorem).

@@ -14,6 +14,5 @@ Q1 and Q2 include student-approved interpretations. Q3 reports the requested
 fit statistics. Q4 includes the approved explanation. Q5 reports the simple-regression slope.
 Q6 includes the numerical comparison and approved commentary.
 Q7 includes the numerical verification and interpretation. Q8 and Q9 explain
-omitted-variable bias and homoskedasticity. Review the answers and replace
-the name/student ID placeholder before submitting. Submit the Python code
+omitted-variable bias and homoskedasticity. Review the answers and add your name/student ID before submitting. Submit the Python code
 and requested output along with the assignment, as instructed.

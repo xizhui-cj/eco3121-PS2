@@ -43,6 +43,12 @@ equation = '\n'.join([
     rf' + {model.params["ability"]:.3f}\,\mathrm{{ability}}_i.',
     r'\]', ''])
 (out / 'q2_equation.tex').write_text(equation)
+effect = 100 * np.expm1(model.params['education'])
+(out / 'q2_interpretation.tex').write_text(
+    rf'The education coefficient is $\hat{{\beta}}_1={model.params["education"]:.3f}$. '
+    rf'Holding ability constant, one additional year of education is associated '
+    rf'with {effect:.3f}\% higher hourly wage '
+    r'($100(e^{\hat{\beta}_1}-1)$).' + '\n')
 table = '\n'.join([
     r'\begin{center}', r'\begin{tabular}{lr}', r'\hline',
     r'Quantity & Estimate \\', r'\hline',

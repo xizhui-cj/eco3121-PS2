@@ -1,18 +1,14 @@
 \section*{Question 7}
-\paragraph{(a)} Regressing ability on education, including an intercept
-and using all 200 observations, gives
+\noindent (a)
 \input{results/q7_output}
 
-\paragraph{(b) Interpretation.}
-The estimate $\hat{\beta}_2=2.086$ means that, holding education constant,
-a one-unit increase in ability is associated with a 2.086-unit increase in
-hourly wage. The auxiliary slope $\tilde{\delta}_1=0.512$ means that one
-additional year of education is associated with 0.512 more units of ability
-in the sample.
+\noindent (b) Holding education constant, a one-unit increase in ability
+is associated with 2.086 more units of hourly wage ($\hat{\beta}_2=2.086$).
+One additional year of education is associated with 0.512 more units of
+ability ($\tilde{\delta}_1=0.512$).
 
-Using unrounded estimates, their product is 1.069 wage units per year of
-education. When ability is omitted, the education coefficient also captures
-the wage association of ability that is correlated with education. This
-confounding term accounts for the increase from $\hat{\beta}_1=3.690$ to
-$\tilde{\beta}_1=4.760$. These are conditional and unconditional associations;
-the numerical identity alone does not establish causation.
+Their product is 1.069 wage units per year of
+education. Omitting ability attributes its wage association to education
+to the extent that the two variables are correlated. This confounding
+term accounts for the increase from $\hat{\beta}_1=3.690$ to
+$\tilde{\beta}_1=4.760$.

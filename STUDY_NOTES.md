@@ -13,7 +13,7 @@ additional year. Exponentiation turns an addition in logs into a multiplication:
 With the displayed rounded coefficient, the factor is exp(0.065), about
 1.0672. Subtract 1 and multiply by 100 to get approximately 6.72%.
 The quick approximation is 100*b, or 6.5%. These percentages use the rounded
-coefficient; using the full coefficient gives slightly different results.
+coefficient. The final answer uses the full coefficient and reports 6.751%.
 More precisely, the regression describes conditional mean log wages;
 predicting conditional mean wage levels also requires addressing the log
 transformation of the error. These associations are not automatically causal.
