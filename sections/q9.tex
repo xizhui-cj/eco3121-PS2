@@ -1,0 +1,21 @@
+\section*{Question 9}
+Homoskedasticity requires
+\[
+\operatorname{Var}(u_i\mid\mathrm{education}_i,\mathrm{ability}_i)=\sigma^2,
+\]
+so the conditional error variance must be constant across individuals.
+This may be implausible for wages: wage dispersion could differ across
+education and ability levels because of differences in occupations,
+industries, and other unobserved factors. Thus heteroskedasticity is
+plausible, although this argument alone does not demonstrate that it is
+present in this dataset.
+
+Homoskedasticity is not required for OLS to be unbiased. With random
+sampling, no perfect multicollinearity, and zero conditional mean,
+$E[u_i\mid\mathrm{education}_i,\mathrm{ability}_i]=0$, OLS can remain
+unbiased even if the conditional error variance varies. Heteroskedasticity
+instead affects the validity of the usual OLS standard-error formula and
+the Gauss--Markov efficiency result. In practice, heteroskedasticity-robust
+standard errors can address inference, but they do not correct omitted-variable
+bias. As instructed, the estimates reported in this assignment use the
+usual OLS standard errors.

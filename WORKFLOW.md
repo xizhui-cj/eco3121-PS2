@@ -1,8 +1,9 @@
 # Collaborative assignment workflow
 
-Scope currently implemented: Questions 1--7. The assistant maintains Python,
-generated numerical outputs, and LaTeX mechanics. The student writes the
-interpretations in the corresponding files under `sections/`. Do not edit generated files in `results/`;
+Scope currently implemented: Questions 1--9. At the student's request, the
+assistant has completed the remaining interpretations and conceptual answers.
+Review/edit the prose in the corresponding files under `sections/`.
+`STUDY_NOTES.md` explains the underlying concepts. Do not edit generated files in `results/`;
 rerun Python when a numerical change is needed.
 
 ## Local reproduction
@@ -61,6 +62,8 @@ GitHub synchronization. Never place an Overleaf token in the repository/chat.
 - Q6 fit comparison: generated and checked on the common 200-observation sample.
 - Q6 comparison text: approved text included.
 - Q7(a) auxiliary regression and coefficient identity: generated and checked.
-- Q7(b) interpretation: waiting for student.
-- Questions 8--9: not started.
+- Q7(b) interpretation: completed at student request.
+- Q8 omitted-variable bias: completed.
+- Q9 homoskedasticity and unbiasedness: completed.
+- Name and student ID: student must replace placeholder before submission.
 - Overleaf: initial import and compilation observed; latest pull pending.

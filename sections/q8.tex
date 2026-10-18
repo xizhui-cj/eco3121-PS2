@@ -1,0 +1,30 @@
+\section*{Question 8}
+If ability is omitted, the regression becomes
+\[
+\mathrm{wage}_i=\beta_0+\beta_1\mathrm{education}_i+v_i,
+\qquad v_i=\beta_2\mathrm{ability}_i+u_i.
+\]
+Even if the full model satisfies
+$E[u_i\mid\mathrm{education}_i,\mathrm{ability}_i]=0$, the short regression's
+zero conditional mean assumption, $E[v_i\mid\mathrm{education}_i]=0$,
+can fail: ability is part of the error and is correlated with education.
+Allowing the intercept to absorb a constant error mean does not remove
+this dependence on education.
+
+Under the full model's exogeneity assumption, the omitted-variable bias
+formula is
+\[
+\operatorname{plim}\tilde{\beta}_1-\beta_1
+=\beta_2\frac{\operatorname{Cov}(\mathrm{education}_i,\mathrm{ability}_i)}
+{\operatorname{Var}(\mathrm{education}_i)}
+=\beta_2\delta_1,
+\]
+where $\delta_1$ is the population slope from regressing ability on education.
+If ability raises wages ($\beta_2>0$) and is positively associated with
+education ($\delta_1>0$), the bias is positive. Omitting ability then
+attributes some of its wage association to education, so the education
+coefficient is expected to be larger than in the model controlling for
+ability. The sample estimates are consistent with this reasoning:
+4.760 without ability versus 3.690 with ability. This conclusion about bias
+relies on the full model's assumptions; including ability alone does not
+guarantee that all confounding has been removed.
