@@ -1,0 +1,12 @@
+{
+  "question": 7,
+  "n": 200,
+  "intercept_in_each_regression": true,
+  "delta_tilde_1": 0.5124534717021136,
+  "beta_tilde_1": 4.759527591126619,
+  "beta_hat_1": 3.6903240356926146,
+  "beta_hat_2": 2.086440261361964,
+  "lhs_difference": 1.0692035554340045,
+  "rhs_product": 1.0692035554340038,
+  "identity_error": 6.661338147750939e-16
+}
