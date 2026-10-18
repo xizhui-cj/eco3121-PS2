@@ -58,6 +58,6 @@ GitHub synchronization. Never place an Overleaf token in the repository/chat.
 - Q4 explanation: approved text included.
 - Q5 regression: generated and independently checked.
 - Q6 fit comparison: generated and checked on the common 200-observation sample.
-- Q6 comparison text: waiting for student.
+- Q6 comparison text: approved text included.
 - Questions 7--9: not started.
 - Overleaf: initial import and compilation observed; latest pull pending.

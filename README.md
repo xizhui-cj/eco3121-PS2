@@ -11,5 +11,5 @@ Collaborative coursework project. Current scope: Questions 1--6.
 
 Q1 and Q2 include student-approved interpretations. Q3 reports the requested
 fit statistics. Q4 includes the approved explanation. Q5 reports the simple-regression slope.
-Q6 provides the numerical comparison; student commentary is pending.
+Q6 includes the numerical comparison and approved commentary.
 Questions 7--9 have not been implemented.
