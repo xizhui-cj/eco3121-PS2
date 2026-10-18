@@ -4,18 +4,18 @@ If ability is omitted, the regression becomes
 \mathrm{wage}_i=\beta_0+\beta_1\mathrm{education}_i+v_i,
 \qquad v_i=\beta_2\mathrm{ability}_i+u_i.
 \]
-Because ability is correlated with education, omitting it can violate the
+so, Because ability is correlated with education, omitting it can violate the
 zero conditional mean assumption, $E[v_i\mid\mathrm{education}_i]=0$.
-Under the full model's exogeneity assumption, the omitted-variable bias is
+the omitted-variable bias is
 \[
 \operatorname{plim}\tilde{\beta}_1-\beta_1
 =\beta_2\frac{\operatorname{Cov}(\mathrm{education}_i,\mathrm{ability}_i)}
 {\operatorname{Var}(\mathrm{education}_i)}
 =\beta_2\delta_1,
 \]
-where $\delta_1$ is the population slope from regressing ability on education.
-Since ability is expected to raise wages ($\beta_2>0$) and to be positively
+
+Since ability is expected to raise wages ($\beta_2>0$) and positively
 associated with education ($\delta_1>0$), the bias is upward. The education
-coefficient without ability is therefore expected to be larger than the
-coefficient controlling for ability. The estimates, 4.760 versus 3.690,
+coefficient without ability is expected larger than the
+coefficient controlling ability. The estimates, 4.760 vs. 3.690,
 are consistent with this prediction.
